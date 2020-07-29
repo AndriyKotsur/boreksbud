@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <title>Борексбуд. Надання будівельних послуг в Закарпатській області.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
+    <link rel="preload" as="script" href="script/script.min.js">
+    <link rel="preload" as="style" href="css/style.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.min.css">
+    <script type="text/javascript" defer src="script/script.min.js"></script>
+</head>
+
+<body class="body">
+    @@include('_header.html')
+    <div class="contact-us-header">
+        <h1 class="contact-us-header__title section-title">Контакти</h1>
+    </div>
+    <div class="contact-us">
+        <div class="container">
+            <div class="contact-us-wrapper">
+                <div class="contact-us-phones">
+                    <h2 class="contact-us__title section-title">Номера телефонів</h2>
+                    <p class="contact-us__item">+380 96 863 25 71</p>
+                    <p class="contact-us__item">+380 63 664 60 86</p>
+                </div>
+                <div class="contact-us-locations">
+                    <h2 class="contact-us__title section-title">Локація</h2>
+                    <p class="contact-us__item">Україна, 88000, Ужгород, вул. Капушанська 108A (другий поверх офіс
+                        №2)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-us-request">
+            <div class="container">
+                <div class="contact-us-wrapper--request">
+                    <div class="contact-us-map">
+                        <iframe title="Company location"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d659.4469448745859!2d22.273343015864846!3d48.613905385128355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473918560bb85cfb%3A0xfcd6b80f2a7b819a!2z0LLRg9C70LjRhtGPINCa0LDQv9GD0YjQsNC90YHRjNC60LAsIDEwOCwg0KPQttCz0L7RgNC-0LQsINCX0LDQutCw0YDQv9Cw0YLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgODgwMDA!5e0!3m2!1suk!2sua!4v1595252045390!5m2!1suk!2sua"
+                            allowfullscreen width="600" height="400" class="contact-us__map"></iframe>
+                    </div>
+                    <div class="contact-us-form">
+                        <h2 class="contact-us-form__title section-title">Потрібна консультація?</h2>
+                        <p class="contact-us-form__text section-text">Залишіть заявку і ми зв’яжемося з Вами
+                        </p>
+                        <form id="form" type="name" class="form section-request__form">
+                            <div class="form-field section-request-form__group">
+                                <input id="name" type="text" class="form-input section-request-form__input inputName"
+                                    name="name" placeholder="Ваше ім'я" required>
+                                <label for="name" class="form-label section-request-form__label"></label>
+                            </div>
+                            <div class="form-field section-request-form__group">
+                                <input id="phone" type="tel" class="form-input section-request-form__input inputPhone"
+                                    name="phone" placeholder="Ваш номер телефону" required>
+                                <label for="phone" class="form-label section-request-form__label"></label>
+                            </div>
+                            <div class="form-field section-request-form__group">
+                                <input id="email" type="email" class="form-input section-request-form__input inputEmail"
+                                    name="email" placeholder="Ваша електронна адреса" required>
+                                <label for="email" class="form-label section-request-form__label"></label>
+                            </div>
+                            <div class="form-field section-request-form__group">
+                                <textarea id="message" class="form-textarea section-request-form__textarea inputMsg"
+                                    name="message" placeholder="Ваше повідомлення"></textarea>
+                                <label for="message" class="form-label section-request-form__label"></label>
+                            </div>
+                            <span class="form-error section-request-form__error errMsg"></span>
+                            <input type="submit" class="form-submit btn-link section-request-form__btn"
+                                value="Надіслати">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('_popup.html')
+    @@include('_footer.html')
+</body>
+
+</html>
