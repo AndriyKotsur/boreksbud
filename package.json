@@ -1,8 +1,8 @@
 {
-  "name": "construction",
+  "name": "Boreksbud",
   "version": "1.0.0",
-  "description": "layout: scss | gulp",
-  "main": "index.js",
+  "description": "Boreksbud",
+  "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
